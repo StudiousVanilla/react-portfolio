@@ -37,7 +37,6 @@ const slideBoxes = (id) => {
   setTimeout(() => {
     const borderBox = document.getElementById(`${id}Border`);
     borderBox.classList.add('translate-x-[850px]');
-    console.log('added')
     const bowserBox = document.getElementById(`${id}Browser`);
     bowserBox.classList.add('-translate-x-[850px]');
   }, 0);
@@ -54,12 +53,12 @@ const handleClick = (e, id) => {
 
   showProject(id);
   slideBoxes(id);
-  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  document.getElementById(id).scrollIntoView({behavior: 'smooth'});
 };
 
 const IconSelection = () => {
   return (
-    <div className="w-full h-screen flex justify-evenly items-center text-slate-900 ">
+    <div className="w-full h-screen max-h-[900px] min-h-[400px] bg-slate-900 flex justify-evenly items-center text-slate-900 ">
       <div
         className="w-48 h-48 max-h-60 max-w-60 opacity-30 hover:opacity-100 hover:cursor-pointer group icon"
         onClick={(e) => handleClick(e, 'XMAS')}

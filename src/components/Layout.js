@@ -10,17 +10,18 @@ import TSBLogo from '../assests/projectIcons/TSBLogo.svg';
 
 const Layout = () => {
   return (
-    <div className="max-w-screen min-h-screen h-fit flex flex-col justify-evenly items-center bg-slate-900 pb-4 pt-4 overflow-hidden">
+    <div className="max-w-screen flex flex-col justify-evenly items-center bg-slate-900 pb-4 pt-4 overflow-hidden">
       <IconSelection />
+
       <div className="w-full h-full hidden project" id="XMAS">
         <Project
           borderId="XMASBorder"
           broswerId="XMASBrowser"
           logo={XmasLogo}
           logoAltText="Xmas Logo"
-          preview=""
+          preview={DrinkMXRPreview}
           previewAlt="Preview"
-          gif=""
+          gif={DrinkMXRGif}
           gifAlt="gif"
         />
       </div>
