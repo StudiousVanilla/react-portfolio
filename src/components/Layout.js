@@ -3,6 +3,7 @@ import Nav from './Nav';
 import ProjectsPage from './ProjectsPage';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
+import Pic from './Pic';
 
 const Layout = () => {
   return (
@@ -12,6 +13,7 @@ const Layout = () => {
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={ <ContactPage/> } />
+        <Route path="/" element={ <Pic/> } />
       </Routes>
     </BrowserRouter>
   );
