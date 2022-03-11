@@ -27,6 +27,86 @@ body {
   -webkit-border-radius: 1ex;
 }
 
+
+.cell-grid{
+  --grid-size:3;
+  --cell-size: 30vmin;
+  --cell-gap: 2vmin;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), var(--cell-size));
+  grid-template-rows: repeat(var(--grid-size), var(--cell-size));
+  gap: var(--cell-gap);
+  padding: var(--cell-gap);
+  position: relative;
+}
+
+.tile {
+  --x: 2;
+  --y: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: transparent;
+  top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
+  left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
+  transition: 100ms ease-in-out;
+}
+
+#tile1{
+  --x:0;
+  --y:0;
+}
+#tile2{
+  --x:1;
+  --y:0;
+}
+#tile3{
+  --x:2;
+  --y:0;
+}
+#tile4{
+  --x:0;
+  --y:1;
+}
+#tile5{
+  --x:1;
+  --y:1;
+}
+#tile6{
+  --x:2;
+  --y:1;
+}
+#tile7{
+  --x:0;
+  --y:2;
+}
+#tile8{
+  --x:1;
+  --y:2;
+}
+
+#tile9{
+  --x:2;
+  --y:2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -48,3 +128,6 @@ code {
   text-shadow:1px 1px 10px rgb(24, 245, 50), 1px 1px 10px rgb(32, 243, 57);
   text-align:center;
 }
+
+
+

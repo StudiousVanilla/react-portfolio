@@ -14,32 +14,37 @@ const RandomIcon = () => {
 
   const [ticker, setTicker] = useState(0);
   const increaseTicker = () => {
-    if(ticker < 15)
-    setTimeout(() => {
-      setTicker(ticker + 1);
-      console.log('tick');
-    }, 1000);
+    if(ticker<150){
+
+    }
+    if(ticker % 30 === 0){
+      setTimeout(() => {
+        setTicker(ticker + 1);
+        console.log('tick');
+      }, 3000);
+    }
+    else{
+      setTimeout(() => {
+        setTicker(ticker + 1);
+        console.log('tick');
+      }, 750);
+    }
   };
 
   const [image, setImage] = useState(html)
-
+  const images = [html, javascript, vuejs, tailwindcss, react,graphql,firebase,css]
   const getRandomNumber = (max) =>{
     return Math.floor(Math.random() * max);
   }
-
-  const images = [html, javascript, vuejs, tailwindcss, react,graphql,firebase,css]
-
-
-
+ 
   useEffect(() => {
     increaseTicker()
     setImage(images[getRandomNumber(8)])
-    // return () => {
-    // }
-  }, [ticker, ]);
+    // eslint-disable-next-line
+  }, [ticker]);
 
   return <div className="w-8 h-8">
-    <img src={image} alt="" />
+    <img src={image} alt="Icons representing changing web development knowledge" />
   </div>;
 };
 

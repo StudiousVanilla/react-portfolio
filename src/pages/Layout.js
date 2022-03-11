@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Nav from './Nav';
+import Nav from '../components/Nav';
 import ProjectsPage from './ProjectsPage';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
-import Pic from './Pic';
+import Pic from '../components/Pic';
 
 const Layout = () => {
   return (

@@ -1,5 +1,5 @@
-import Project from './Project';
-import IconSelection from './IconSelection';
+import Project from '../components/Project';
+import IconSelection from '../components/IconSelection';
 import tsbPreview from '../assests/projectPreviews/tsbPreview.png';
 import tsbGif from '../assests/projectGifs/tsbGif.gif';
 import DrinkMXRPreview from '../assests/projectPreviews/DrinkMXRPreview.png';
