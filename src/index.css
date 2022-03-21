@@ -31,13 +31,19 @@ body {
 .cell-grid{
   --grid-size:3;
   --cell-size: 30vmin;
-  --cell-gap: 2vmin;
+  --cell-gap: 1vmin;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), var(--cell-size));
   grid-template-rows: repeat(var(--grid-size), var(--cell-size));
   gap: var(--cell-gap);
   padding: var(--cell-gap);
   position: relative;
+  z-index: 10;
+}
+
+.cell{
+  background-color: transparent;
+  border-radius: 0.5rem;
 }
 
 .tile {
@@ -53,6 +59,10 @@ body {
   top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
   left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
   transition: 100ms ease-in-out;
+  background-color: #d2deee;
+  border-radius: 0.5rem;
+  z-index: 1;
+ 
 }
 
 #tile1{
@@ -92,19 +102,6 @@ body {
   --x:2;
   --y:2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 code {
