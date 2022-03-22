@@ -30,7 +30,7 @@ body {
 
 .cell-grid{
   --grid-size:3;
-  --cell-size: 30vmin;
+  --cell-size: 26vmin;
   --cell-gap: 1vmin;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), var(--cell-size));

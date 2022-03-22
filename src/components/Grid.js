@@ -90,19 +90,19 @@ const Grid = () => {
   };
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   changePosition();
-    // }, 10000);
+    setTimeout(() => {
+      changePosition();
+    }, 1000);
 
     // return () => {
     //   second
     // }
 
-    //eslint-disable-next-line
+    // eslint-disable-next-line
   }, [blankPosition]);
 
   return (
-    <div className="cell-grid rotate-12 relative" onClick={changePosition}>
+    <div className="cell-grid rotate-12 relative z-20" onClick={changePosition}>
       <div className="cell" />
       <div className="cell" />
       <div className="cell" />
