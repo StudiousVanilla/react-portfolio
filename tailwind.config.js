@@ -31,9 +31,25 @@ module.exports = {
           '17%,23%': { transform: 'rotate(107deg)' },
           '23%,100%': { transform: 'rotate(105deg)' },
         },
+        lilBounce: {
+          '0%,100%': { 
+            transform: 'translateY(-10%)',
+            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
+          },
+          '50%': { 
+            transform: 'translateY(0)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)' 
+          }
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(4deg)' },
+        }
       },
       animation: {
         swing: 'swing 20s infinite',
+        lilBounce: 'lilBounce 1s infinite',
+        wiggle: 'wiggle 3s ease-in-out infinite',
       },
     },
   },

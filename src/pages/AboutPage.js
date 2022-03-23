@@ -6,8 +6,8 @@ import CourseItem from '../components/CourseItem';
 
 const AboutPage = () => {
   return (
-    <div className="w-full flex flex-col items-center mx-auto">
-      <div className="w-full h-screen flex justify-evenly items-center bg-slate-900 text-slate-100 pl-20">
+    <div className="w-full h-screen mx-auto overflow-x-hidden snap-mandatory snap-y scroll-smooth">
+      <div className="w-full h-screen flex justify-evenly items-center bg-slate-900 text-slate-100 pl-20 snap-start scroll-smooth">
         <h1 className="w-1/3 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-left bg-slate-900 z-10">
           Hi. <br />
           I'm Oisín. <br />
@@ -22,7 +22,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="w-full h-screen flex justify-center items-center bg-slate-100 text-slate-900">
+      <div className="w-full h-screen flex justify-center items-center bg-slate-100 text-slate-900 snap-start scroll-smooth">
         <Grid />
 
         <div className="relative w-1/2 flex flex-col items-center font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center group transition ease-in-out delay-150">
@@ -35,35 +35,42 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="w-full h-screen relative z-10 bg-slate-900 flex flex-col items-center">
-        <div className="w-full h-full flex">
-          <div className="w-1/2 flex flex-col items-center pt-20">
-            <h3 className="font-bold text-5xl bg-slate-900 text-slate-100 mb-10">
-              Brushing up on
-            </h3>
-            <div className="h-1/2  w-1/2 text-slate-100 text-2xl font-bold">
-              <ul className="h-full flex flex-col justify-evenly p-4">
-                <li>
-                  <CourseItem
-                    name={'Advanced Git'}
-                    image={git}
-                    finished={false}
-                  />
-                </li>
-                <li>
-                  <CourseItem name={'Docker'} image={docker} finished={true} />
-                </li>
+      <div className="w-full h-screen min-h-[800px] relative bg-slate-900 flex flex-col justify-center snap-start scroll-smooth">
+        <div className="bg-slate-900 w-full h-3/5 flex items-center justify-center">
+          <h2 className="text-slate-100 text-6xl font-bold pl-20">
+            I'm always <br /> learning new things
+          </h2>
 
-                <li>
-                  <CourseItem
-                    name={'React Router v6'}
-                    image={react}
-                    finished={true}
-                  />
-                </li>
-              </ul>
+          <div className="h-3/4 w-2/5 flex justify-center">
+            <div className="h-fit w-fit mt-10 grid grid-cols-2 gap-1 sm:gap-2">
+              <div />
+              <CourseItem
+                link={'https://www.youtube.com/watch?v=31ieHmcTUOk&list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7'}
+                name={'Docker'}
+                image={docker}
+                finished={true}
+              />
+              <CourseItem
+                link={'https://fireship.io/courses/git/'}
+                name={'Advanced Git'}
+                image={git}
+                finished={false}
+              />
+              <CourseItem
+                link={'https://www.youtube.com/watch?v=WfpmvgVZD1A&list=PL4cUxeGkcC9h7F1LWaQ7MAI8ptg5VjvxJ'}
+                name={'Router v6'}
+                image={react}
+                finished={true}
+              />
             </div>
           </div>
+        </div>
+
+        <div className="bg-slate-100 w-full h-2/5 flex items-center justify-canter">
+          <div className="bg-green-200 h-full w-1/2"></div>
+          <h2 className="text-slate-900 text-6xl font-bold px-20">
+            And working <br /> on new projects
+          </h2>
         </div>
       </div>
     </div>
