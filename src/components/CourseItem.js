@@ -3,22 +3,22 @@ const CourseItem = ({ link, name, image, finished }) => {
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <div className="relative w-full max-w-[120px] md:min-w-min md:max-w-[160px] h-full max-h-[120px] min-h-[110px] md:max-h-[160px] md:min-h-[160px] flex flex-col items-center justify-evenly rounded-xl bg-white group border-4 border-white hover:border-sky-500 hover:cursor-pointer">
+      <div className="relative h-28 w-28 sm:h-32 sm:w-32 md:h-44 md:w-44 mx-2 flex flex-col items-center justify-evenly rounded-xl bg-white group border-4 border-white hover:border-sky-500 hover:cursor-pointer">
 
-        <p className="text-sm md:text-base px-4 text-center">{name}</p>
+        <p className="text-sm font-bold md:text-base mx-auto text-center">{name}</p>
 
         <img
           src={image}
           alt="docker"
-          className="w-1/5 sm:w-8 md:w-1/3 group-hover:animate-wiggle"
+          className="w-1/5 sm:w-10 md:w-2/5 group-hover:animate-wiggle"
         />
 
         <div className="w-full">
-          <p className="text-xs md:text-sm font-light font-i md:-mb-2">Status:</p>
+          <p className="text-xs md:text-sm font-light font-i md:-mb-2 ml-2">Status:</p>
           <div>
             {isFinished && (
               <div className="flex items-center">
-                <p className="text-sm mr-1 md:text-base md:mr-2">Complete</p>
+                <p className="text-sm mr-1 md:text-base ml-2 md:mr-2">Complete</p>
                 <svg
                   className=" w-4 h-4 md:w-8 md:h-8 animate-lilBounce"
                   fill="green"
@@ -35,7 +35,7 @@ const CourseItem = ({ link, name, image, finished }) => {
             )}
             {!isFinished && (
               <div className="flex items-center">
-                <p className="text-sm mr-1 md:text-base md:mr-2">In progress</p>
+                <p className="text-sm mr-1 md:text-base ml-2 md:mr-2">In progress</p>
                 <svg
                   className="h-4 w-4 md:w-8 md:h-8 animate-pulse"
                   fill="orange"

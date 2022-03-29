@@ -29,9 +29,11 @@ body {
 }
 
 
+
+
 .cell-grid{
   --grid-size:3;
-  --cell-size: 26vmin;
+  --cell-size: 18vmin;
   --cell-gap: 1vmin;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), var(--cell-size));
@@ -40,6 +42,22 @@ body {
   padding: var(--cell-gap);
   position: relative;
   z-index: 10;
+}
+
+@media (min-width: 950px) {
+  .cell-grid{
+    --cell-size: 22vmin;
+    grid-template-columns: repeat(var(--grid-size), var(--cell-size));
+    grid-template-rows: repeat(var(--grid-size), var(--cell-size));
+  }
+}
+
+@media (min-width: 750px) {
+  .cell-grid{
+    --cell-size: 24vmin;
+    grid-template-columns: repeat(var(--grid-size), var(--cell-size));
+    grid-template-rows: repeat(var(--grid-size), var(--cell-size));
+  }
 }
 
 .cell{
