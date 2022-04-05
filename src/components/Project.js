@@ -20,7 +20,8 @@ const Project = ({
         id={borderId}
       >
         <BorderBox logo={logo}
-  logoAltText={logoAltText} />
+  logoAltText={logoAltText}
+  showLineBox={true} />
       </div>
 
       <div

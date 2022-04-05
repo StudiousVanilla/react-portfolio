@@ -28,11 +28,8 @@ body {
   -webkit-border-radius: 1ex;
 }
 
-
-
-
-.cell-grid{
-  --grid-size:3;
+.cell-grid {
+  --grid-size: 3;
   --cell-size: 18vmin;
   --cell-gap: 1vmin;
   display: grid;
@@ -45,7 +42,7 @@ body {
 }
 
 @media (min-width: 950px) {
-  .cell-grid{
+  .cell-grid {
     --cell-size: 22vmin;
     grid-template-columns: repeat(var(--grid-size), var(--cell-size));
     grid-template-rows: repeat(var(--grid-size), var(--cell-size));
@@ -53,14 +50,14 @@ body {
 }
 
 @media (min-width: 750px) {
-  .cell-grid{
+  .cell-grid {
     --cell-size: 24vmin;
     grid-template-columns: repeat(var(--grid-size), var(--cell-size));
     grid-template-rows: repeat(var(--grid-size), var(--cell-size));
   }
 }
 
-.cell{
+.cell {
   background-color: transparent;
   border-radius: 0.5rem;
 }
@@ -81,47 +78,45 @@ body {
   background-color: #d2deee;
   border-radius: 0.5rem;
   z-index: 1;
- 
 }
 
-#tile1{
-  --x:0;
-  --y:0;
+#tile1 {
+  --x: 0;
+  --y: 0;
 }
-#tile2{
-  --x:1;
-  --y:0;
+#tile2 {
+  --x: 1;
+  --y: 0;
 }
-#tile3{
-  --x:2;
-  --y:0;
+#tile3 {
+  --x: 2;
+  --y: 0;
 }
-#tile4{
-  --x:0;
-  --y:1;
+#tile4 {
+  --x: 0;
+  --y: 1;
 }
-#tile5{
-  --x:1;
-  --y:1;
+#tile5 {
+  --x: 1;
+  --y: 1;
 }
-#tile6{
-  --x:2;
-  --y:1;
+#tile6 {
+  --x: 2;
+  --y: 1;
 }
-#tile7{
-  --x:0;
-  --y:2;
+#tile7 {
+  --x: 0;
+  --y: 2;
 }
-#tile8{
-  --x:1;
-  --y:2;
-}
-
-#tile9{
-  --x:2;
-  --y:2;
+#tile8 {
+  --x: 1;
+  --y: 2;
 }
 
+#tile9 {
+  --x: 2;
+  --y: 2;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -130,20 +125,35 @@ code {
 
 .cursive {
   font-family: 'Sacramento', cursive;
-  background:black;
-  color:rgb(209, 254, 197);
-  text-shadow:1px 1px 10px rgb(24, 245, 50), 1px 1px 10px rgb(32, 243, 57);
-  font-size:48px;
-  text-align:center;
+  background: black;
+  color: rgb(209, 254, 197);
+  text-shadow: 1px 1px 10px rgb(24, 245, 50), 1px 1px 10px rgb(32, 243, 57);
+  font-size: 48px;
+  text-align: center;
 }
 
-.self{
+.self {
   font-family: 'Sacramento', cursive;
-  background:black;
-  color:rgb(209, 254, 197);
-  text-shadow:1px 1px 10px rgb(24, 245, 50), 1px 1px 10px rgb(32, 243, 57);
-  text-align:center;
+  background: black;
+  color: rgb(209, 254, 197);
+  text-shadow: 1px 1px 10px rgb(24, 245, 50), 1px 1px 10px rgb(32, 243, 57);
+  text-align: center;
 }
+
+.boxes {
+  opacity: 0.03;
+  background-image: linear-gradient(
+      #f1f5f9 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to right,
+      #f1f5f9 1px,
+      #0f172a 1px
+    );
+  background-size: 46px 46px;
+}
+
 
 
 
