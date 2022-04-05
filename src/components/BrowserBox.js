@@ -1,6 +1,6 @@
 const BrowserBox = ({ preview, previewAlt, gif, gifAlt }) => {
   return (
-    <div className="max-w-[36rem] max-h-[20rem] h-full w-full flex flex-col justify-center items-center sm:max-w-[480px] sm:max-h-[300px] md:max-w-[370px] md:max-h-[250px] xl:max-w-[520px] xl:max-h-[300px]">
+    <div className="max-w-[36rem] max-h-[20rem] h-full w-full flex flex-col justify-center items-center sm:max-w-[480px] sm:max-h-[300px] md:max-w-[370px] md:max-h-[250px] lg:max-w-[460px] lg:max-h-[205px] xl:max-w-[520px] xl:max-h-[300px]">
       <div className="relative w-full flex flex-col border rounded-t-lg border-slate-500">
         <div className="flex-none">
           <div className="flex items-center h-8 space-x-1.5 px-3">

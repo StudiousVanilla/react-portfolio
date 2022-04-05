@@ -15,7 +15,7 @@ const ProjectsPage = () => {
 
       <div className="absolute w-full h-full boxes z-0" />
 
-      <div className="flex h-screen w-full justify-center items-center">
+      <div className="md:min-h-[650px] h-screen w-full flex justify-center items-center">
 
         <div className="relative h-2/3 w-1/4 min-w-[425px] flex flex-col justify-start items-center text-center rounded-lg py-8 mx-4 text-slate-100 bg-red-00 z-10">
           <p className='text-6xl font-bold'>Choose a project to see more details</p>
@@ -26,13 +26,13 @@ const ProjectsPage = () => {
 
        
 
-        <div className="h-2/3 w-2/5 min-w-[425px] max-w-[690px] rounded-lg text-slate-900 mx-4 z-10">
+        <div className="h-3/4 md:min-h-[525px] w-2/5 min-w-[425px] max-w-[600px] rounded-lg text-slate-900 mx-4 z-10">
           <IconSelection />
         </div>
 
       </div>
 
-      <div className="w-full h-full hidden project" id="XMAS">
+      <div className="w-full h-full min-h-[600px] hidden project" id="XMAS">
         <Project
           borderId="XMASBorder"
           broswerId="XMASBrowser"
@@ -42,9 +42,13 @@ const ProjectsPage = () => {
           previewAlt="Preview"
           gif={DrinkMXRGif}
           gifAlt="gif"
+          title="Xmas Time-Machine"
+          appDescription="DrinkMXR is a wesite to help you find the perfect drink. Select your ingredients and see all the different cocktails you could make."
+          techStack="NodeJS/Express - GraphQL - Heroku - React - Tailwind CSS - Netlify"
+          gitHubLink="https://github.com/StudiousVanilla/digital-card"
         />
       </div>
-      <div className="w-full h-full hidden project" id="DrinkMXR">
+      <div className="w-full h-full min-h-[600px] hidden project" id="DrinkMXR">
         <Project
           borderId="DrinkMXRBorder"
           broswerId="DrinkMXRBrowser"
@@ -54,9 +58,13 @@ const ProjectsPage = () => {
           previewAlt="Preview"
           gif={DrinkMXRGif}
           gifAlt="gif"
+          title="Drink MXR"
+          appDescription="DrinkMXR is a wesite to help you find the perfect drink. Select your ingredients and see all the different cocktails you could make."
+          techStack="NodeJS/Express - GraphQL - Heroku - React - Tailwind CSS - Netlify"
+          gitHubLink="https://github.com/StudiousVanilla/drinkmxr"
         />
       </div>
-      <div className="w-full h-full hidden project" id="TSB">
+      <div className="w-full h-full min-h-[600px] hidden project" id="TSB">
         <Project
           borderId="TSBBorder"
           broswerId="TSBBrowser"
@@ -66,6 +74,10 @@ const ProjectsPage = () => {
           previewAlt="TSB Preview"
           gif={tsbGif}
           gifAlt="TSB gif"
+          title="The Sounding Board"
+          appDescription="DrinkMXR is a wesite to help you find the perfect drink. Select your ingredients and see all the different cocktails you could make."
+          techStack="React - NodeJS/Express - Firebase - Heroku - Netlify"
+          gitHubLink="https://github.com/StudiousVanilla/tsb"
         />
       </div>
     </div>

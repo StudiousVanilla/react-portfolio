@@ -63,7 +63,7 @@ const IconSelection = () => {
       <div className='bg-slate-900 h-95 w-95 flex flex-wrap justify-evenly pt-12'>
 
         <div
-          className="w-1/2 max-w-[220px] max-h-[220px] opacity-30 hover:opacity-100 hover:cursor-pointer group icon"
+          className="w-1/2 max-w-[220px] max-h-[220px] hover:opacity-100 hover:cursor-pointer group icon flex flex-col items-center justify-center"
           onClick={(e) => handleClick(e, 'XMAS')}
         >
           <LineBox logo={XmasLogo} logoAltText="Xmas Logo" />
@@ -73,7 +73,7 @@ const IconSelection = () => {
         </div>
 
         <div
-          className="w-1/2 max-w-[220px] max-h-[220px] opacity-30 hover:opacity-100 hover:cursor-pointer group icon"
+          className="w-1/2 max-w-[220px] max-h-[220px] hover:cursor-pointer group icon flex flex-col items-center justify-center"
           onClick={(e) => handleClick(e, 'DrinkMXR')}
         >
           <LineBox logo={DrinkMXR} logoAltText="DrinkMXR Logo" />
@@ -83,7 +83,7 @@ const IconSelection = () => {
         </div>
 
         <div
-          className="w-1/2 max-w-[220px] max-h-[220px] opacity-30 hover:opacity-100 hover:cursor-pointer group icon"
+          className="w-1/2 max-w-[220px] max-h-[220px] hover:cursor-pointer group icon flex flex-col items-center justify-center"
           onClick={(e) => handleClick(e, 'TSB')}
         >
           <LineBox logo={TSBLogo} logoAltText="TSB Logo" />
