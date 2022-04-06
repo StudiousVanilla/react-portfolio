@@ -10,6 +10,7 @@ const BorderBox = ({
   appDescription,
   gitHubLink,
   techStack,
+  techIcons,
 }) => {
   return (
     <div className="bg-slate-800 flex justify-center items-center rounded-xl relative  md:min-w-[420px] md:min-h-[480px] lg:min-w-[480px] lg:min-h-[550px] xl:-ml-10 xl:min-w-[550px] xl:min-h-[650px]">
@@ -22,11 +23,7 @@ const BorderBox = ({
           </div>
         )}
         <div className="absolute w-24 h-24 -bottom-10 left-3 opacity-50 hover:opacity-100">
-          <a
-            href={gitHubLink}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={gitHubLink} target="_blank" rel="noreferrer">
             <img
               src={github}
               alt="github"
@@ -38,11 +35,11 @@ const BorderBox = ({
           <h1 className="text-3xl font-semibold pt-6 text-slate-100 sm:mt-3">
             {title}
           </h1>
-          <div className=' h-3/4 py-5 flex flex-col justify-evenly'>
+          <div className=" h-3/4 py-5 flex flex-col justify-evenly">
             <p>{appDescription}</p>
-            <p className='text-center'>{techStack}</p>
-            <div className='h-36 w-full bg-green-200'>
-              <StackIcons/>
+            <p className="text-center">{techStack}</p>
+            <div className="h-16 w-full bg-slate-200 rounded-lg">
+              <StackIcons techIcons={techIcons} />
             </div>
           </div>
         </div>
