@@ -14,8 +14,8 @@ const Project = ({
   gifAlt,
   title,
   appDescription,
+  appComments,
   gitHubLink,
-  techStack,
   techIcons,
 }) => {
   return (
@@ -30,8 +30,7 @@ const Project = ({
           showLineBox={true}
           title={title}
           appDescription={appDescription}
-          techStack={techStack}
-          gitHubLink={gitHubLink}
+          appComments={appComments}
           techIcons={techIcons}
         />
       </div>
@@ -45,6 +44,7 @@ const Project = ({
           previewAlt={previewAlt}
           gif={gif}
           gifAlt={gifAlt}
+          gitHubLink={gitHubLink}
         />
       </div>
     </div>

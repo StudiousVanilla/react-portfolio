@@ -8,8 +8,6 @@ import arrow from '../assests/icons/arrow2.svg';
 import XmasLogo from '../assests/projectIcons/XmasLogo.svg';
 import DrinkMXR from '../assests/projectIcons/DrinkMXRLogo.svg';
 import TSBLogo from '../assests/projectIcons/TSBLogo.svg';
-import html from '../assests/stackIcons/html.svg';
-import css from '../assests/stackIcons/css.svg';
 import tailwind from '../assests/stackIcons/tailwindcss.svg';
 import javascript from '../assests/stackIcons/javascript.svg';
 import react from '../assests/stackIcons/react.svg';
@@ -52,15 +50,15 @@ const ProjectsPage = () => {
           gif={DrinkMXRGif}
           gifAlt="gif"
           title="Xmas Time-Machine"
-          appDescription="DrinkMXR is a wesite to help you find the perfect drink. Select your ingredients and see all the different cocktails you could make."
+          appDescription="A dash through the Irish advertising delights of Christmases past! Select a yaer and watch a classic Christmas TV Advert from that year. (Made for Mobile)"
+          appComments="This project was built over a couple of days and isn't very well structured. The idea and data changed almost hourly so most of the code is sloppy and not scalable. But it was a fun project. I Hope you enjoy."
           techIcons={[
-            { src: html, key: 0 },
-            { src: tailwind, key: 1 },
-            { src: javascript, key: 2 },
-            { src: react, key: 3 },
-            { src: firebase, key: 4 },
-            { src: netlify, key: 5 },
-            { src: pwa, key: 6 },
+            { src: tailwind, key: 1, alt:'tailwind' },
+            { src: javascript, key: 2, alt:'javascript' },
+            { src: react, key: 3, alt:'react' },
+            { src: firebase, key: 4, alt:'firebase' },
+            { src: netlify, key: 5, alt:'netlify' },
+            { src: pwa, key: 6, alt:'progrssive web app' },
           ]}
           gitHubLink="https://github.com/StudiousVanilla/digital-card"
         />
@@ -79,15 +77,15 @@ const ProjectsPage = () => {
           gifAlt="gif"
           title="Drink MXR"
           appDescription="DrinkMXR is a wesite to help you find the perfect drink. Select your ingredients and see all the different cocktails you could make."
+          appComments="This web application is primarlity designed for mobile though, it works on larger screens. I made it mostly to practice using API's. I also got to make some cocktails, which was a plus"
           techIcons={[
-            { src: html, key: 0 },
-            { src: tailwind, key: 1 },
-            { src: javascript, key: 2 },
-            { src: react, key: 3 },
-            { src: node, key: 4 },
-            { src: graphql, key: 5 },
-            { src: heroku, key: 6 },
-            { src: netlify, key: 7 },
+            { src: tailwind, key: 1, alt:'tailwind' },
+            { src: javascript, key: 2, alt:'javascript' },
+            { src: react, key: 3, alt:'react' },
+            { src: node, key: 4, alt:'node JS' },
+            { src: graphql, key: 5, alt:'graph QL' },
+            { src: heroku, key: 6, alt:'heroku' },
+            { src: netlify, key: 7, alt:'netlify' },
           ]}
           gitHubLink="https://github.com/StudiousVanilla/drinkmxr"
         />
@@ -105,16 +103,15 @@ const ProjectsPage = () => {
           gif={tsbGif}
           gifAlt="TSB gif"
           title="The Sounding Board"
-          appDescription="DrinkMXR is a wesite to help you find the perfect drink. Select your ingredients and see all the different cocktails you could make."
+          appDescription="The Sounding Board (TSB) is a coaching and HR consultancy service offered by ICF accredited coach Mona Eames. I was approached to help build the new TSB website as they were tranisitioning away from Squarespace."
+          appComments="I built this site using vanilla CSS which was a great way to get a deep understadning of the language, and something I never want to do again. I also made a secure custom CMS for blog generation which is actually pretty cool"
           techIcons={[
-            { src: html, key: 0 },
-            { src: css, key: 1 },
-            { src: javascript, key: 2 },
-            { src: react, key: 3 },
-            { src: firebase, key: 4 },
-            { src: node, key: 4 },
-            { src: heroku, key: 4 },
-            { src: netlify, key: 5 },
+            { src: javascript, key: 1, alt:'tailwind' },
+            { src: react, key: 2, alt:'react' },
+            { src: firebase, key: 3, alt:'firebase' },
+            { src: node, key: 4, alt:'node JS' },
+            { src: heroku, key: 5, alt:'heroku' },
+            { src: netlify, key: 6, alt:'netlify' },
           ]}
           gitHubLink="https://github.com/StudiousVanilla/tsb"
         />
