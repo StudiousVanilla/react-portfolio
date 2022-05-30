@@ -3,7 +3,7 @@ const CourseItem = ({ link, name, image, finished }) => {
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <div className="relative h-28 w-28 sm:h-32 sm:w-32 md:h-44 md:w-44 mx-2 flex flex-col items-center justify-evenly rounded-xl bg-white group border-4 border-white hover:border-sky-500 hover:cursor-pointer">
+      <div className="relative h-28 w-28 sm:h-32 sm:w-32 md:h-44 md:w-44 mx-2 flex flex-col items-center justify-evenly rounded-xl bg-white group shadow-md hover:border-2 hover:border-sky-500 hover:cursor-pointer">
 
         <p className="text-sm font-bold md:text-base mx-auto text-center">{name}</p>
 

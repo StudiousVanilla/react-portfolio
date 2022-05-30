@@ -1,5 +1,5 @@
 const StackIcons = ({ techIcons }) => {
-  console.log(techIcons);
+  
 
   return (
     <div className="w-full h-full flex flex-wrap justify-evenly items-center">

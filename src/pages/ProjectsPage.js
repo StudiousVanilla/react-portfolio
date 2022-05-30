@@ -17,6 +17,7 @@ import node from '../assests/stackIcons/nodejs.svg';
 import graphql from '../assests/stackIcons/graphql.svg';
 import heroku from '../assests/stackIcons/heroku.svg';
 import pwa from '../assests/stackIcons/pwa.svg';
+import Footer from '../components/Footer';
 
 const ProjectsPage = () => {
   return (
@@ -116,6 +117,7 @@ const ProjectsPage = () => {
           gitHubLink="https://github.com/StudiousVanilla/tsb"
         />
       </div>
+      <Footer/>
     </div>
   );
 };

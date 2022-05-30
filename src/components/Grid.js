@@ -113,42 +113,42 @@ const Grid = () => {
       <div className="cell" />
       <div className="cell" />
 
-      <div className="tile flex items-center justify-center" id="tile1">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile1">
         <div className="w-2/3 h-2/3">
           <img src={nodejs} alt="" />
         </div>
       </div>
-      <div className="tile flex items-center justify-center" id="tile2">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile2">
         <div className="w-2/3 h-2/3 flex items-center justify-center">
           <img src={graphql} alt="" className='w-full'/>
         </div>
       </div>
-      <div className="tile flex items-center justify-center" id="tile3">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile3">
         <div className="w-1/2 h-1/2 flex items-center justify-center">
           <img src={firebase} alt="" />
         </div>
       </div>
-      <div className="tile flex items-center justify-center" id="tile4">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile4">
         <div className="w-2/3 h-2/3 flex items-center justify-center">
           <img src={netlify} alt="" />
         </div>
       </div>
-      <div className="tile flex items-center justify-center" id="tile5">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile5">
         <div className="w-2/3 h-2/3 flex items-center justify-center">
           <img src={javascript} alt="" />
         </div>
       </div>
-      <div className="tile flex items-center justify-center" id="tile6">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile6">
         <div className="w-2/3 h-2/3 flex items-center justify-center">
           <img src={react} alt="" />
         </div>
       </div>
-      <div className="tile flex items-center justify-center" id="tile7">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile7">
         <div className="w-2/3 h-2/3 flex items-center justify-center">
           <img src={vuejs} alt="" />
         </div>
       </div>
-      <div className="tile flex items-center justify-center" id="tile8">
+      <div className="tile flex items-center justify-center shadow-lg" id="tile8">
         <div className="w-2/3 h-2/3 flex items-center justify-center">
           <img src={tailwindcss} alt="" />
         </div>
