@@ -44,14 +44,14 @@ module.exports = {
           }
         },
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-4deg)' },
-          '50%': { transform: 'rotate(4deg)' },
+          '0%, 100%': { transform: 'rotate(-2deg)' },
+          '50%': { transform: 'rotate(2deg)' },
         }
       },
       animation: {
         swing: 'swing 20s infinite',
         lilBounce: 'lilBounce 1s infinite',
-        wiggle: 'wiggle 3s ease-in-out infinite',
+        wiggle: 'wiggle 10s ease-in-out infinite 3.54s',
       },
     },
   },

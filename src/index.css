@@ -162,6 +162,66 @@ code {
   transform: scale(-1, 1) rotate(-90deg);
 }
 
+.drop-container{
+  right: -1.85%;
+  bottom: 1%;
+}
+
+.toggle-buttons {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 1;
+  filter: url("#goo");
+  text-align: center;
+  line-height: 10px;
+  color: white;
+}
+
+.toggle-btn {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 100%;
+  filter: blur(0px);
+}
+
+.drop {
+  width: 15px;
+  height: 15px;
+  background-color: #ec4899;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+  position: absolute;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  animation: drop 10s ease-in infinite;
+  animation-delay: 10s; 
+  filter: blur(0.5px);
+}
+
+
+@keyframes drop {
+  90% {
+    transform: translate(-50%, 100%) rotate(-135deg);
+    border-bottom-right-radius: 0%;
+  }
+  100% {
+    transform: translate(-50%, 40vh) rotate(-135deg);
+    border-bottom-right-radius: 100%;
+  }
+}
+
+
 
 
 
