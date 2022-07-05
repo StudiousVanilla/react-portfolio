@@ -34,7 +34,7 @@ const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
 
 
 
-      <div className="absolute -bottom-24 right-0 w-16 h-16 opacity-50 hover:opacity-100">
+      <div className="absolute -right-8 xs:-bottom-28 sm:-bottom-20 md:-bottom-20 lg:-bottom-32 xl:-bottom-24 xl:-right-4 w-16 h-16 opacity-50 hover:opacity-100">
         <a href={gitHubLink} target="_blank" rel="noreferrer">
           <img
             src={github}

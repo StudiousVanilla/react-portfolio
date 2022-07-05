@@ -216,13 +216,165 @@ code {
     border-bottom-right-radius: 0%;
   }
   100% {
-    transform: translate(-50%, 40vh) rotate(-135deg);
+    transform: translate(-50%, 27vh) rotate(-135deg);
     border-bottom-right-radius: 100%;
   }
 }
 
+.wave-container{
+  padding-top: 23vh;
+}
+
+.wave {
+  position: relative;
+  margin: 175px auto;
+  opacity: 0;
+  top: 0;
+    width: 2px;
+    height: 1px;
+  border: #ec4899 7px solid;
+    -moz-border-radius: 300px / 150px;
+    -webkit-border-radius: 300px / 150px;
+    border-radius: 300px / 150px;
+  -moz-animation-name: ripple;
+  -webkit-animation-name: ripple;
+  animation-name: ripple;
+  -moz-animation-delay: 15000;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+  -moz-animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+
+.wave-container2{
+  padding-top: 23vh;
+}
+
+.wave2 {
+  position: relative;
+  margin: 175px auto;
+  opacity: 0;
+  top: 0;
+    width: 2px;
+    height: 1px;
+  border: #ec4899 7px solid;
+    -moz-border-radius: 300px / 150px;
+    -webkit-border-radius: 300px / 150px;
+    border-radius: 300px / 150px;
+  -moz-animation-name: ripple2;
+  -webkit-animation-name: ripple2;
+  animation-name: ripple2;
+  -moz-animation-delay: 15000;
+  -webkit-animation-delay: 13.85s;
+  animation-delay: 13.85s;
+  -moz-animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.splash-container{
+  padding-top: 22vh;
+}
+
+.splash{
+  position: relative;
+  margin: 175px auto;
+  opacity: 0;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  -moz-animation-name: splash;
+  -webkit-animation-name: splash;
+  animation-name: splash;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+  -moz-animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 
 
+@keyframes ripple {
+  0%, 69%{
+    opacity: 0;
+    top: 0;
+    width: 2px;
+    height: 1px;
+    border: #ec4899 7px solid;
+    -moz-border-radius: 300px / 150px;
+    -webkit-border-radius: 300px / 150px;
+    border-radius: 300px / 150px;
+  }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      border: #f1f5f9 5px solid;
+      width: 600px;
+      height: 300px;
+      border-width: 1px;
+      top: -100px;
+      opacity: 0;
+    }
+}
+
+@keyframes ripple2 {
+  0%, 69%{
+    opacity: 0;
+    top: 0;
+    width: 2px;
+    height: 1px;
+    border: #ec4899 7px solid;
+    -moz-border-radius: 300px / 150px;
+    -webkit-border-radius: 300px / 150px;
+    border-radius: 300px / 150px;
+  }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      border: #f1f5f9 5px solid;
+      width: 400px;
+      height: 200px;
+      border-width: 1px;
+      top: -60px;
+      opacity: 0;
+    }
+}
+
+@keyframes splash {
+  0%,91%{
+    top:0px;
+    opacity:0
+  }
+  92%{
+    top:0px;
+    opacity:0
+  }
+  96% {
+      top: -15px;
+      opacity:1;
+    }
+  98%{
+    opacity: 1;
+  }
+  100% {
+      top: 18px;
+      opacity:0;
+    }
+}
 
 
 

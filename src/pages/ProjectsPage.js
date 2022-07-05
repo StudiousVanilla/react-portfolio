@@ -17,7 +17,6 @@ import node from '../assests/stackIcons/nodejs.svg';
 import graphql from '../assests/stackIcons/graphql.svg';
 import heroku from '../assests/stackIcons/heroku.svg';
 import pwa from '../assests/stackIcons/pwa.svg';
-import Footer from '../components/Footer';
 
 const ProjectsPage = () => {
   return (
@@ -51,8 +50,8 @@ const ProjectsPage = () => {
           gif={DrinkMXRGif}
           gifAlt="gif"
           title="Xmas Time-Machine"
-          appDescription="A dash through the Irish advertising delights of Christmases past! Select a yaer and watch a classic Christmas TV Advert from that year. (Made for Mobile)"
-          appComments="This project was built over a couple of days and isn't very well structured. The idea and data changed almost hourly so most of the code is sloppy and not scalable. But it was a fun project. I Hope you enjoy."
+          appDescription="A dash through the Irish advertising delights of Christmas past! Select a year and watch a classic Christmas TV Advert from that year. (Made for Mobile)"
+          appComments="This project was built over 2 days and isn't very well structured. The idea and design almost hourly so most of the code is sloppy and not scalable. But 'twas the season."
           techIcons={[
             { src: tailwind, key: 1, alt:'tailwind' },
             { src: javascript, key: 2, alt:'javascript' },
@@ -78,7 +77,7 @@ const ProjectsPage = () => {
           gifAlt="gif"
           title="Drink MXR"
           appDescription="DrinkMXR is a wesite to help you find the perfect drink. Select your ingredients and see all the different cocktails you could make."
-          appComments="This web application is primarlity designed for mobile though, it works on larger screens. I made it mostly to practice using API's. I also got to make some cocktails, which was a plus"
+          appComments="This web application is primarlity designed for mobile though, it works on larger screens. I made it mostly to practice using API's. I also got to make some cocktails, which was a plus."
           techIcons={[
             { src: tailwind, key: 1, alt:'tailwind' },
             { src: javascript, key: 2, alt:'javascript' },
@@ -104,8 +103,8 @@ const ProjectsPage = () => {
           gif={tsbGif}
           gifAlt="TSB gif"
           title="The Sounding Board"
-          appDescription="The Sounding Board (TSB) is a coaching and HR consultancy service offered by ICF accredited coach Mona Eames. I was approached to help build the new TSB website as they were tranisitioning away from Squarespace."
-          appComments="I built this site using vanilla CSS which was a great way to get a deep understadning of the language, and something I never want to do again. I also made a secure custom CMS for blog generation which is actually pretty cool"
+          appDescription="The Sounding Board (TSB) is a coaching and HR consultancy service offered by ICF accredited coach Mona Eames."
+          appComments="I built this site using vanilla CSS which was a great way to learn, and something I never want to do again. I also made a secure custom CMS for blog generation which is actually pretty cool"
           techIcons={[
             { src: javascript, key: 1, alt:'tailwind' },
             { src: react, key: 2, alt:'react' },
@@ -117,7 +116,6 @@ const ProjectsPage = () => {
           gitHubLink="https://github.com/StudiousVanilla/tsb"
         />
       </div>
-      <Footer/>
     </div>
   );
 };

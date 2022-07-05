@@ -21,12 +21,12 @@ const BorderBox = ({
           </div>
         )}
         <div className="h-full w-full flex flex-col justify-start items-center px-10 text-white">
-          <h1 className="text-4xl font-bold pt-6 text-slate-100 sm:mt-3">
+          <h1 className="text-3xl lg:text-4xl font-bold pt-6 text-slate-100 sm:mt-3">
             {title}
           </h1>
           <div className=" h-2/3 px-6 mt-4 flex flex-col justify-evenly items-center">
-            <p className='text-xl font-semibold'>{appDescription}</p>
-            <p className='text-xl font-semibold'>{appComments}</p>
+            <p className='text-base lg:text-xl font-semibold'>{appDescription}</p>
+            <p className='text-base lg:text-xl font-semibold'>{appComments}</p>
           </div>
         </div>
         <div className="h-16 w-full absolute bottom-2 bg-slate-900 rounded-lg">
