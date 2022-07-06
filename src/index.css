@@ -260,12 +260,12 @@ code {
   margin: 175px auto;
   opacity: 0;
   top: 0;
-    width: 2px;
-    height: 1px;
+  width: 2px;
+  height: 1px;
   border: #ec4899 7px solid;
-    -moz-border-radius: 300px / 150px;
-    -webkit-border-radius: 300px / 150px;
-    border-radius: 300px / 150px;
+  -moz-border-radius: 300px / 150px;
+  -webkit-border-radius: 300px / 150px;
+  border-radius: 300px / 150px;
   -moz-animation-name: ripple2;
   -webkit-animation-name: ripple2;
   animation-name: ripple2;
@@ -376,6 +376,23 @@ code {
     }
 }
 
-
+@media only screen and (max-width: 700px) {
+  .toggle-buttons  {
+    width: 50%;
+    height: 50%;
+  }
+  .drop{
+    width: 10px;
+    height: 10px;
+    left: 175%;
+    top: 140%;
+  }
+  .wave-container, .wave-container2{
+    padding-top: 19vh;
+  }
+  .splash-container{
+    padding-top: 18vh;
+  }
+}
 
 

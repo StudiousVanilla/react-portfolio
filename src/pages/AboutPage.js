@@ -13,10 +13,10 @@ const AboutPage = () => {
     <div className="w-full h-screen mx-auto overflow-x-hidden snap-mandatory snap-y scroll-smooth  text-3xl sm:text-4xl lg:text-5xl">
 
       {/* Screen 1 */}
-      <div className="relative w-full h-screen flex justify-evenly items-center bg-slate-100 text-slate-900 snap-start scroll-smooth sm:min-w-[1000px] z-20">
+      <div className="relative w-full h-screen flex flex-col-reverse justify-evenly items-center sm:flex-row sm:justify-evenly sm:items-center bg-slate-100 text-slate-900 snap-start scroll-smooth sm:min-w-[1000px] z-20">
         <Grid />
 
-        <h1 className="w-1/3 font-extrabold tracking-tight text- flex justify-center text-slate-900 z-10">
+        <h1 className="w-3/5 sm:w-1/3 font-extrabold tracking-tight text- flex justify-center text-slate-900 z-10">
           Hi. <br />
           I'm Oisín. <br />
           This is my site.
@@ -26,8 +26,8 @@ const AboutPage = () => {
 
 
       {/* Screen 2 */}
-      <div className="relative w-full h-screen flex justify-evenly items-center bg-slate-900 text-slate-100 pl-20 snap-start scroll-smooth md:min-w-[1000px] text-6xl z-20">
-        <div className="relative w-2/3 flex flex-col items-center font-extrabold tracking-tight text-center group transition ease-in-out delay-150 z-10">
+      <div className="relative w-full h-screen flex justify-evenly items-center bg-slate-900 text-slate-100 pl-0 sm:pl-20 snap-start scroll-smooth md:min-w-[1000px] text-4xl sm:text-6xl z-20">
+        <div className="relative w-full sm:w-2/3 flex flex-col items-center font-extrabold tracking-tight text-center z-10">
           <h3 className="w-3/4 min-w-max px-3 mb-6 relative">
             I'm a self-taught
           </h3>
@@ -52,32 +52,28 @@ const AboutPage = () => {
             </div>
           </h3>
 
-            <div className='bg-transparent flex pl-[413px] absolute wave-container'>
-              <div className="wave"></div>
-            </div>
-            <div className='bg-transparent flex pl-[413px] absolute wave-container2'>
-              <div className="wave2"></div>
-            </div>
-            <div className='bg-transparent flex pl-[413px] absolute splash-container'>
-              <div className="splash bg-pink-500 rounded-full"></div>
-            </div>
+          <div className='bg-transparent flex pl-[260px] sm:pl-[413px] absolute wave-container'>
+            <div className="wave"></div>
+          </div>
+          <div className='bg-transparent flex pl-[260px] sm:pl-[413px] absolute wave-container2'>
+            <div className="wave2"></div>
+          </div>
+          <div className='bg-transparent flex pl-[260px] sm:pl-[413px] absolute splash-container'>
+            <div className="splash bg-pink-500 rounded-full"></div>
+          </div>
 
         </div>
-
-
-
       </div>
 
 
       {/* Screen 3 */}
       <div className="relative w-full h-screen flex flex-col justify-center items-center bg-slate-100 text-slate-900 snap-start scroll-smooth sm:min-w-[1000px] z-30">
 
-        <div className="w-full h-1/2 flex flex-col items-center justify-evenly">
-          <h2 className="font-bold pl-2">I'm brushing up on...</h2>
+        <div className="w-full h-2/3 sm:h-1/2 flex flex-col items-center justify-evenly">
+          <h2 className="font-bold pl-2 mb-6 sm:m-0 sm:text-3xl text-2xl">I'm brushing up on...</h2>
 
-          <div className="w-2/5 flex justify-center">
-            <div className="h-fit w-fit flex">
-              <div />
+          <div className="w-full sm:w-2/5 flex flex-col flex-wrap justify-center sm:flex-row sm:justify-center">
+            <div className="sm:h-fit sm:w-fit w-full flex flex-row flex-wrap sm:flex-nowrap justify-center">
               <CourseItem
                 link={'https://www.youtube.com/playlist?list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO'}
                 name={'Svelte'}
@@ -110,7 +106,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="h-1/2 w-full flex flex-wrap items-center justify-center relative">
+        <div className="hidden h-1/2 w-full sm:flex flex-wrap items-center justify-center relative">
           See some projects
         </div>
 

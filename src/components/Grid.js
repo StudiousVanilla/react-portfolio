@@ -10,6 +10,8 @@ import graphql from '../assests/stackIcons/graphql.svg';
 import netlify from '../assests/stackIcons/netlify.svg';
 
 const Grid = () => {
+
+
   const positions = {
     position1: [0, 0, 1],
     position2: [1, 0, 2],
@@ -35,19 +37,26 @@ const Grid = () => {
     // make moving tile variable
     let movingTile = document.getElementById(`tile${randomNumber}`);
 
-    // move tile to blank location
-    movingTile.style.setProperty('--x', blankPosition[0]);
-    movingTile.style.setProperty('--y', blankPosition[1]);
-
-    // update tile id
-    movingTile.id = `tile${blankPosition[2]}`;
-
-    //set old tile
-    let oldBlank = blankPosition[2];
-    setOldPosition(oldBlank);
-
-    // set new blank location
-    setBlankPosition(positions[`position${randomNumber}`]);
+    // handles error when navigating between pages
+    // callback function fires after navigation, due to setTimeout, but necessary elements no longer in DOM
+    if(movingTile === null){
+      return
+    }
+    else{
+      // move tile to blank location
+      movingTile.style.setProperty('--x', blankPosition[0]);
+      movingTile.style.setProperty('--y', blankPosition[1]);
+  
+      // update tile id
+      movingTile.id = `tile${blankPosition[2]}`;
+  
+      //set old tile
+      let oldBlank = blankPosition[2];
+      setOldPosition(oldBlank);
+  
+      // set new blank location
+      setBlankPosition(positions[`position${randomNumber}`]);
+    }
   };
 
   const changePosition = () => {
@@ -90,6 +99,7 @@ const Grid = () => {
   };
 
   useEffect(() => {
+
     setTimeout(() => {
       changePosition();
     }, 1000);

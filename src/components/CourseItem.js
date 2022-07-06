@@ -3,14 +3,14 @@ const CourseItem = ({ link, name, image, finished }) => {
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <div className="relative h-28 w-28 sm:h-32 sm:w-32 md:h-44 md:w-44 mx-2 flex flex-col items-center justify-evenly rounded-xl bg-white group shadow-md hover:border-2 hover:border-sky-500 hover:cursor-pointer">
+      <div className="relative h-36 w-36 my-2 sm:my-0 sm:h-32 sm:w-32 md:h-44 md:w-44 mx-2 flex flex-col items-center justify-evenly rounded-xl bg-white group shadow-md  hover:border-2 hover:border-sky-500 hover:cursor-pointer">
 
         <p className="text-sm font-bold md:text-base mx-auto text-center">{name}</p>
 
         <img
           src={image}
           alt="docker"
-          className="w-1/5 sm:w-10 md:w-2/5 group-hover:animate-wiggle"
+          className="w-1/3 sm:w-10 md:w-2/5"
         />
 
         <div className="w-full">
@@ -20,7 +20,7 @@ const CourseItem = ({ link, name, image, finished }) => {
               <div className="flex items-center">
                 <p className="text-sm mr-1 md:text-base ml-2 md:mr-2">Complete</p>
                 <svg
-                  className=" w-4 h-4 md:w-8 md:h-8 animate-lilBounce"
+                  className="w-6 h-6 sm:w-5 sm:h-5 md:w-8 md:h-8 animate-lilBounce"
                   fill="green"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const CourseItem = ({ link, name, image, finished }) => {
               <div className="flex items-center">
                 <p className="text-sm mr-1 md:text-base ml-2 md:mr-2">In progress</p>
                 <svg
-                  className="h-4 w-4 md:w-8 md:h-8 animate-pulse"
+                  className="w-6 h-6 sm:w-5 sm:h-5 md:w-8 md:h-8 animate-pulse"
                   fill="orange"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +53,9 @@ const CourseItem = ({ link, name, image, finished }) => {
           </div>
         </div>
 
-        <div className="absolute invisible group-hover:visible right-1 top-1">
+        <div className="absolute sm:invisible group-hover:visible right-1 top-1">
           <svg
-            className="w-3 h-3 md:w-5 md:h-5 text-sky-500"
+            className="w-4 sm:w-3 h-4 sm:h-3 md:w-5 md:h-5 text-sky-500"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
