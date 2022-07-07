@@ -26,20 +26,20 @@ module.exports = {
         '50rem': '50rem',
       },
       keyframes: {
-        swing: {
+        hinge: {
           '0%,4%': { transform: 'rotate(0deg)' },
-          '4%,10%': { transform: 'rotate(115deg)' },
-          '10%,17%': { transform: 'rotate(95deg)' },
-          '17%,23%': { transform: 'rotate(107deg)' },
-          '23%,100%': { transform: 'rotate(105deg)' },
+          '4%,10%': { transform: 'rotate(-69deg)' },
+          '10%,17%': { transform: 'rotate(-59deg)' },
+          '17%,23%': { transform: 'rotate(-61deg)' },
+          '23%,100%': { transform: 'rotate(-59deg)' },
         },
         lilBounce: {
-          '0%,100%': { 
-            transform: 'translateY(-10%)',
+          '0%,20%,50%,100%': { 
+            transform: 'translateY(0%)',
             'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
           },
-          '50%': { 
-            transform: 'translateY(0)',
+          '30%': { 
+            transform: 'translateY(-5%)',
             'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)' 
           }
         },
@@ -49,8 +49,8 @@ module.exports = {
         }
       },
       animation: {
-        swing: 'swing 20s infinite',
-        lilBounce: 'lilBounce 1s infinite',
+        hinge: 'hinge 20s infinite',
+        lilBounce: 'lilBounce 4s infinite',
         wiggle: 'wiggle 10s ease-in-out infinite 3.54s',
       },
     },

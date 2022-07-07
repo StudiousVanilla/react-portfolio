@@ -67,9 +67,9 @@ const AboutPage = () => {
 
 
       {/* Screen 3 */}
-      <div className="relative w-full h-screen flex flex-col justify-center items-center bg-slate-100 text-slate-900 snap-start scroll-smooth sm:min-w-[1000px] z-30">
+      <div className="relative w-full h-screen flex flex-col justify-center items-center bg-slate-100 text-slate-900 snap-start scroll-smooth sm:min-w-[1000px] sm:min-h-[750px] z-30">
 
-        <div className="w-full h-2/3 sm:h-1/2 flex flex-col items-center justify-evenly">
+        <div className="w-full h-1/2 sm:h-1/2 flex flex-col items-center justify-evenly">
           <h2 className="font-bold pl-2 mb-6 sm:m-0 sm:text-3xl text-2xl">I'm brushing up on...</h2>
 
           <div className="w-full sm:w-2/5 flex flex-col flex-wrap justify-center sm:flex-row sm:justify-center">
@@ -106,8 +106,28 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="hidden h-1/2 w-full sm:flex flex-wrap items-center justify-center relative">
-          See some projects
+        <div className="hidden h-1/2 w-full sm:flex flex-wrap items-center justify-center relative -mt-32 pl-2">
+          <div class="shelf rounded-md">
+            <div class="clock">
+              <div class="knot"></div>
+              <div class="hand hour-hand"></div>
+              <div class="hand min-hand"></div>
+              <div class="hand second-hand"></div>
+              <div class="clock-foot-left"></div>
+              <div class="clock-foot-right"></div>
+            </div>
+            <div class="book-1 animate-lilBounce"></div>
+            <div class="book-2 animate-lilBounce"></div>
+            <div class="book-3 animate-lilBounce"></div>
+            <div class="cactus group">
+              <div class="pot">
+                <div class="pot-top"></div>
+                <div class="pot-bottom"></div>
+              </div>
+              <div class="plant-left  group-hover:animate-hinge"></div>
+              <div class="plant-right"></div>
+            </div>
+          </div>
         </div>
 
 
@@ -125,7 +145,7 @@ const AboutPage = () => {
       <div className="relative w-full h-screen flex flex-col justify-center items-center bg-slate-900 text-slate-100 snap-start scroll-smooth sm:min-w-[1000px]">
 
 
-      
+
 
 
       </div>

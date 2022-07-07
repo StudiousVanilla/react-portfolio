@@ -396,3 +396,180 @@ code {
 }
 
 
+.shelf{
+  width:520px;
+  height: 20px;
+  background-color: #0f172a;
+  position: absolute;
+  bottom:10%;
+}
+.clock{
+  width: 110px;
+  height: 110px;
+  background-color: #e2e8f0;
+  border: 10px solid black;
+  position: absolute;
+  border-radius: 50%;
+  left:50px;
+  top:-115px
+}
+.knot{
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+}
+.hand{
+  width: 4px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-100%);
+  transform-origin: bottom;
+}
+.hour-hand{
+  height: 30px;
+  background-color: black;
+  transform: translate(-50%,-100%) rotate(45deg);
+  animation: 216s hour-hand-animation linear infinite;
+}
+.min-hand{
+  height: 40px;
+  width: 3px;
+  background-color: black;
+  transform: translate(-50%,-100%) rotate(160deg);
+  animation: 36s min-hand-animation linear infinite;
+}
+.second-hand{
+  height: 43px;
+  width: 2px;
+  background-color: #e11d48;
+  transform: translate(-50%,-100%) rotate(-40deg);
+  animation: 6s second-hand-animation linear infinite;
+}
+
+.clock-foot-left,.clock-foot-right{
+  height: 50px;
+  width: 12px;
+  background-color: #47321a;
+  position: absolute;
+  bottom: -25px;
+  z-index: -1;
+}
+.clock-foot-left{
+  transform: rotate(30deg);
+  left: 20px;
+}
+.clock-foot-right{
+  transform: rotate(-30deg);
+  right: 20px;
+}
+.book-1,.book-2,.book-3{
+  width: 40px;
+  position: absolute;
+}
+.book-1{
+  height: 170px;
+  left: 200px;
+  top:-170px;
+  background-color: #0d9488;
+  animation-delay: 1s;
+}
+.book-2{
+  height: 195px;
+  top:-195px;
+  left: 240px;
+  background-color: #334155;
+  animation-delay: 3s;
+}
+.book-3{
+  left: 280px;
+  height: 180px;
+  top:-180px;
+  background-color: #ea580c;
+  animation-delay: 2s;
+}
+.book-1::before,.book-2::before,.book-3::before{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #f8fafc;
+  top:20px;
+  left:0;
+}
+.book-1::after,.book-2::after,.book-3::after{
+  content: " ";
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cactus{
+  width: 100px;
+  height: 180px;
+  position: absolute;
+  left: 370px;
+  top:-180px;
+}
+.pot{
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.pot-bottom{
+  width: 100%;
+  height: 70%;
+  background-color: #b45309;
+  position: absolute;
+  bottom: 0 ;
+}
+.pot-top{
+  width: 140%;
+  height: 30%;
+  background-color: #92400e;
+  position: absolute;
+  top: 0;
+  left: -20%;
+}
+.plant-right,.plant-left{
+  width: 50%;
+  background-color: #15803d;
+  position: absolute;
+  bottom: 50%;
+  border-radius: 50px 50px 0 0;
+}
+.plant-left{
+  height: 35%;
+  left: 3%;
+  transform-origin: bottom left
+}
+.plant-right{
+  height: 50%;
+  right: 3%;
+}
+@keyframes min-hand-animation{
+  100%{
+    transform: translate(-50%,-100%) rotate(520deg);
+  }
+}
+@keyframes second-hand-animation{
+  100%{
+    transform: translate(-50%,-100%) rotate(320deg);
+  }
+}
+@keyframes hour-hand-animation{
+  100%{
+    transform: translate(-50%,-100%) rotate(405deg);
+  }
+}
