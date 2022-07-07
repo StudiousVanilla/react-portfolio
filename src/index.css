@@ -573,3 +573,119 @@ code {
     transform: translate(-50%,-100%) rotate(405deg);
   }
 }
+
+
+#cactus-container {
+  margin: 10% auto;
+  width: 100px;
+  height: 150px;
+}
+
+.cactus-plant {
+  background: #26A65B;
+  width: 80%;
+  height: 47.6%;
+  margin: 0 auto;
+ border-radius: 50% 50% 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cactus-needle {
+  background: #000;
+  width: 10%;
+  height: 2px;
+  position: relative;
+  transform: rotate(54deg);
+  float: right;
+  left: 3%;
+  bottom: -15%;
+  margin: 10% 15% 6% 6%;
+  transition: all 0.3s ease;
+}
+
+.cactus-pot-top {
+  background: #d35400;
+  width: 100%;
+  height: 14.3%;
+  margin: 0 auto;
+}
+
+.cactus-pot {
+    background: #d35400;
+    width: 90%;
+    height: 38.1%;
+    margin: 0 auto;
+    border-radius: 0 0px 25px 25px;
+    position: relative;
+}
+
+.cactus-pot:after {
+    background: rgba(230, 126, 34, 0.54);
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0 0px 0px 25px;
+}
+
+#eye {
+background: #000;
+    width: 10%;
+    height: 15%;
+    border-radius: 450%;
+    z-index: 9999;
+    position: relative;
+    top: 25%;
+    right: 35%;
+    margin-left: 10%;
+    float: right;
+}
+#eye:before {
+    content: "";
+    background: #fff;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    border-radius: 50%;
+    top: 30%;
+    left: 30%;
+    transition: all 0.3s ease;
+}
+#eye:after {
+    content: "";
+    background: #fff;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    left: 40%;
+    transition: all 0.3s ease;
+}
+
+#maoth {
+    background: #000;
+    height: 10%;
+    width: 23%;
+    position: absolute;
+    z-index: 9999;
+    position: relative;
+    top: 60%;
+    right: -1%;
+    float: right;
+    border-radius: 0 0 100px 100px;
+  transition: all 0.3s ease;
+}
+
+#cactus-container:hover #eye:after {
+  left: 5px;
+}
+
+#cactus-container:hover #eye:before {
+  left: 9px;
+}
+
+#cactus-container:hover #maoth {
+  height: 15px;
+}

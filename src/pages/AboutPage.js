@@ -145,7 +145,28 @@ const AboutPage = () => {
       <div className="relative w-full h-screen flex flex-col justify-center items-center bg-slate-900 text-slate-100 snap-start scroll-smooth sm:min-w-[1000px]">
 
 
-
+        <div id="cactus-container" className='bg-red-300'>
+          <div class="cactus-plant">
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+            <div class="cactus-needle"></div>
+          </div>
+          <div class="cactus-pot-top"></div>
+          <div class="cactus-pot">
+            <div id="eye"></div>
+            <div id="eye"></div>
+            <div id="maoth"></div>
+          </div>
+        </div>
 
 
       </div>
