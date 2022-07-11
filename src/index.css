@@ -30,8 +30,8 @@ body {
 
 .cell-grid {
   --grid-size: 3;
-  --cell-size: 18vmin;
-  --cell-gap: 1vmin;
+  --cell-size: 12vmax;
+  --cell-gap: 0.5vmax;
   display: grid;
   grid-template-columns: repeat(var(--grid-size), var(--cell-size));
   grid-template-rows: repeat(var(--grid-size), var(--cell-size));
@@ -514,71 +514,14 @@ code {
   top: 0;
   right: 0;
 }
-.cactus{
-  width: 100px;
-  height: 180px;
-  position: absolute;
-  left: 370px;
-  top:-180px;
-}
-.pot{
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  bottom: 0;
-}
-.pot-bottom{
-  width: 100%;
-  height: 70%;
-  background-color: #b45309;
-  position: absolute;
-  bottom: 0 ;
-}
-.pot-top{
-  width: 140%;
-  height: 30%;
-  background-color: #92400e;
-  position: absolute;
-  top: 0;
-  left: -20%;
-}
-.plant-right,.plant-left{
-  width: 50%;
-  background-color: #15803d;
-  position: absolute;
-  bottom: 50%;
-  border-radius: 50px 50px 0 0;
-}
-.plant-left{
-  height: 35%;
-  left: 3%;
-  transform-origin: bottom left
-}
-.plant-right{
-  height: 50%;
-  right: 3%;
-}
-@keyframes min-hand-animation{
-  100%{
-    transform: translate(-50%,-100%) rotate(520deg);
-  }
-}
-@keyframes second-hand-animation{
-  100%{
-    transform: translate(-50%,-100%) rotate(320deg);
-  }
-}
-@keyframes hour-hand-animation{
-  100%{
-    transform: translate(-50%,-100%) rotate(405deg);
-  }
-}
-
 
 #cactus-container {
   margin: 10% auto;
-  width: 100px;
-  height: 150px;
+  width: 125px;
+  height: 200px;
+  position: absolute;
+  left: 360px;
+  top:-252px;
 }
 
 .cactus-plant {
@@ -586,9 +529,10 @@ code {
   width: 80%;
   height: 47.6%;
   margin: 0 auto;
- border-radius: 50% 50% 0 0;
+  border-radius: 50% 50% 0 0;
   position: relative;
   overflow: hidden;
+  transform-origin: bottom right;
 }
 
 .cactus-needle {
@@ -603,6 +547,7 @@ code {
   margin: 10% 15% 6% 6%;
   transition: all 0.3s ease;
 }
+
 
 .cactus-pot-top {
   background: #d35400;
@@ -644,23 +589,25 @@ background: #000;
 #eye:before {
     content: "";
     background: #fff;
-    width: 10%;
-    height: 15%;
+    width: 3px;
+    height: 3px;
     position: absolute;
     border-radius: 50%;
-    top: 30%;
-    left: 30%;
+    top: 20%;
+    left: 25%;
     transition: all 0.3s ease;
+    border: none;
+
 }
 #eye:after {
     content: "";
     background: #fff;
-    width: 10%;
-    height: 15%;
+    width: 3px;
+    height:3px;
     position: absolute;
     border-radius: 50%;
-    top: 40%;
-    left: 40%;
+    top: 45%;
+    left: 45%;
     transition: all 0.3s ease;
 }
 
@@ -679,13 +626,101 @@ background: #000;
 }
 
 #cactus-container:hover #eye:after {
-  left: 5px;
+  left: 25%;
 }
 
 #cactus-container:hover #eye:before {
-  left: 9px;
+  left: 45%;
 }
 
 #cactus-container:hover #maoth {
-  height: 15px;
+  height: 12px;
+}
+
+
+@keyframes min-hand-animation{
+  100%{
+    transform: translate(-50%,-100%) rotate(520deg);
+  }
+}
+@keyframes second-hand-animation{
+  100%{
+    transform: translate(-50%,-100%) rotate(320deg);
+  }
+}
+@keyframes hour-hand-animation{
+  100%{
+    transform: translate(-50%,-100%) rotate(405deg);
+  }
+}
+
+.btn {
+  display: inline-block;
+  width: auto; 
+  height: auto;
+  background-color: transparent;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* 11. hover-border-1 */
+.btn.hover-border-1::before,
+.btn.hover-border-1::after {
+  position: absolute;
+  content: "";
+  width: 15%; 
+  height: 35%;
+  transition: 0.35s;
+}
+.btn.hover-border-1::before {
+  top: 0; left: 0;
+  border-left: 2px solid rgb(51 65 85);
+  border-top: 2px solid rgb(51 65 85);
+}
+.btn.hover-border-1::after {
+  bottom: 0; right: 0;
+  border-right: 2px solid rgb(51 65 85);
+  border-bottom: 2px solid rgb(51 65 85);
+}
+.btn.hover-border-1:hover::before,
+.btn.hover-border-1:hover::after {
+  width: 110%;
+  height: 120%;
+}
+
+
+
+
+
+
+
+.btn-2::before {
+  background-color: #f1f5f9;
+  transition: 0.3s ease-out;
+}
+.btn-2 span {
+  color: #f1f5f9;
+  transition: 0.2s;
+}  
+.btn-2:hover span{
+  color: #0f172a;
+  transition: 0.2s 0.1s;
+}
+
+/* 6. hover-slide-down */
+
+.btn.hover-slide-down::before,
+.btn.hover-slide-down::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+}
+
+.btn.hover-slide-down::before {
+  top: 0; left: 0; right: 0; 
+  height: 0%; width: 100%;
+}
+.btn.hover-slide-down:hover::before {
+  height: 100%;
 }

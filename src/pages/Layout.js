@@ -15,7 +15,7 @@ const Layout = () => {
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={ <ContactPage/> } />
-        <Route path="/" element={ <Pic/> } />
+        <Route path="/" element={ <AboutPage/> } />
       </Routes>
     <Footer/>
     </BrowserRouter>

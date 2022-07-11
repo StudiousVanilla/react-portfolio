@@ -28,10 +28,10 @@ module.exports = {
       keyframes: {
         hinge: {
           '0%,4%': { transform: 'rotate(0deg)' },
-          '4%,10%': { transform: 'rotate(-69deg)' },
-          '10%,17%': { transform: 'rotate(-59deg)' },
-          '17%,23%': { transform: 'rotate(-61deg)' },
-          '23%,100%': { transform: 'rotate(-59deg)' },
+          '4%,10%': { transform: 'rotate(69deg)' },
+          '10%,17%': { transform: 'rotate(59deg)' },
+          '17%,23%': { transform: 'rotate(61deg)' },
+          '23%,100%': { transform: 'rotate(59deg)' },
         },
         lilBounce: {
           '0%,20%,50%,100%': { 
