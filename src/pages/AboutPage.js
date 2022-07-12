@@ -5,6 +5,8 @@ import svelte from '../assests/courseIcons/svelte.svg';
 import Grid from '../components/Grid';
 import CourseItem from '../components/CourseItem';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
+import github from '../assests/icons/github.svg';
 
 const AboutPage = () => {
   return (
@@ -111,7 +113,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="hidden h-3/5 w-full sm:flex flex-wrap items-center justify-center relative -mt-32 pl-2">
+        <div className="hidden h-3/5 sm:h-4/5 w-full sm:flex flex-wrap items-center justify-center relative -mt-32 pl-2">
           <div class="shelf rounded-md">
             <div class="clock">
               <div class="knot"></div>
@@ -153,21 +155,135 @@ const AboutPage = () => {
 
       {/* Screen 4 */}
       <div className="relative w-full h-screen flex flex-col justify-center items-center bg-slate-900 text-slate-100 snap-start scroll-smooth sm:min-w-[1000px]">
+        <div className="area">
+          <ul className="circles">
+            <li className="icon-squares">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-20 w-20"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </li>
+            <li className="icon-squares">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </li>
+            <li className="icon-squares">
 
-
-        <div className="h-1/2 w-full relative">
-          <button class="absolute left-40 top-44 btn btn-2 hover-slide-down px-2 py-1 rotate-6 group">
-            <span className="text-6xl font-semibold relative z-10">Contact</span>
-          </button>
+                <img src={github} alt="github" className='w-20 h-20' />
+            </li>
+            <li className="icon-squares">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-16 w-16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                />
+              </svg>
+            </li>
+            <li className="icon-squares">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                />
+              </svg>
+            </li>
+            <li className="icon-squares">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                />
+              </svg>
+            </li>
+            <li className="icon-squares">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+            </li>
+            <li className="icon-squares">@</li>
+            <li className="icon-squares">2</li>
+            <li className="icon-squares">3</li>
+          </ul>
         </div>
 
-        <div className="h-1/2 w-full relative">
-          <button class="absolute right-40 top-28 btn hover-border-1 px-5 py-4 -rotate-6">
-            <span className="text-6xl text-slate-100 font-medium">My Projects</span>
-          </button>
+        <div className="h-1/2 w-full absolute flex justify-center items-center top-0 group">
+          <Link to="/contact">
+            <button class="btn btn-2 hover-slide-down px-2 py-1 rotate-6 group">
+              <span className="text-6xl font-semibold relative z-10">
+                Contact
+              </span>
+            </button>
+          </Link>
         </div>
 
-
+        <div className="h-1/2 w-full relative flex justify-center items-center">
+          <div className="h-full w-full relative flex justify-center items-center circuit-board group">
+            <Link to="/projects">
+              <button class="btn hover-border-1 px-5 py-4 -rotate-6 group-hover:bg-slate-900">
+                <span className="text-6xl text-slate-100 font-medium">
+                  My Projects
+                </span>
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
 
       <Footer />
