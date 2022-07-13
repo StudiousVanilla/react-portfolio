@@ -4,7 +4,6 @@ import git from '../assests/courseIcons/git.svg';
 import svelte from '../assests/courseIcons/svelte.svg';
 import Grid from '../components/Grid';
 import CourseItem from '../components/CourseItem';
-import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import github from '../assests/icons/github.svg';
 import LinkedIn from '../assests/icons/LinkedIn.svg';
@@ -12,6 +11,7 @@ import LinkedIn from '../assests/icons/LinkedIn.svg';
 const AboutPage = () => {
   return (
     <div className="w-full h-screen mx-auto overflow-x-hidden snap-mandatory snap-y scroll-smooth  text-3xl sm:text-4xl lg:text-5xl">
+      
       {/* Screen 1 */}
       <div className="relative w-full h-screen flex flex-col-reverse justify-center items-center sm:flex-row sm:justify-evenly sm:items-center bg-slate-100 text-slate-900 snap-start scroll-smooth sm:min-w-[1000px] z-20">
         <Grid />
@@ -291,8 +291,8 @@ const AboutPage = () => {
 
         <Link to="/contact" className="w-full h-full absolute">
           <div className="h-1/2 w-full absolute flex justify-center items-center top-0 contact-container">
-            <button class="btn btn-2 hover-slide-down px-2 py-1 rotate-6 group">
-              <span className="text-6xl font-semibold relative z-10">
+            <button class="btn btn-2 hover-slide-down px-2 py-1 -rotate-6 group">
+              <span className="text-4xl sm:text-6xl font-semibold relative z-10">
                 Contact
               </span>
             </button>
@@ -301,18 +301,18 @@ const AboutPage = () => {
 
         <div className="h-1/2 w-full relative flex justify-center items-center">
           <Link to="/projects" className="h-full w-full bg-slate-100">
-            <div className="h-full w-full relative flex justify-center items-center projects-container">
-              <button class="btn hover-border-1 px-5 py-4 -rotate-6 opacity-100">
-                <span className="text-6xl text-slate-900 font-medium ">
+            <div className="h-full w-full relative flex justify-center items-center projects-container transition-all ease-in-out duration-1000 group">
+              <button class="btn hover-border-1 px-5 py-4 -rotate-6 opacity-100 bg-transparent transition-all ease-in-out duration-500 group-hover:bg-white">
+                <span className="text-4xl sm:text-6xl text-slate-900 font-semibold">
                   My Projects
                 </span>
               </button>
             </div>
           </Link>
         </div>
+
       </div>
 
-      <Footer />
     </div>
   );
 };

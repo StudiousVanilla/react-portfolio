@@ -23,8 +23,9 @@ const ProjectsPage = () => {
     <div className="relative max-w-screen flex flex-col justify-evenly items-center bg-slate-900 pb-4 pt-4 overflow-hidden">
       <div className="absolute w-full h-full boxes z-0" />
 
-      <div className="md:min-h-[650px] h-screen w-full flex justify-center items-center">
-        <div className="relative h-2/3 w-1/4 min-w-[425px] flex flex-col justify-start items-center text-center rounded-lg py-8 mx-4 text-slate-100 bg-red-00 z-10">
+      <div className="md:min-h-[650px] h-screen w-full flex flex-col sm:flex-row justify-center items-center">
+        
+        <div className="hidden relative h-2/3 w-1/4 min-w-[425px] sm:flex flex-col justify-start items-center text-center rounded-lg py-8 mx-4 text-slate-100 bg-red-00 z-10">
           <p className="text-6xl font-bold">
             Choose a project to see more details
           </p>
@@ -33,9 +34,12 @@ const ProjectsPage = () => {
           </div>
         </div>
 
-        <div className="h-3/4 md:min-h-[525px] w-2/5 min-w-[425px] max-w-[600px] rounded-lg text-slate-900 mx-4 z-10">
+        <h2 className="sm:hidden text-3xl text-slate-100 font-semibold -mt-12 mb-6">Pick a project</h2>
+
+        <div className="h-2/3 sm:h-3/4 md:min-h-[525px] w-4/5 sm:w-2/5 sm:min-w-[425px] max-w-[600px] rounded-lg text-slate-900 mx-4 z-10">
           <IconSelection />
         </div>
+
       </div>
 
       {/* Xmas TimeMachine */}

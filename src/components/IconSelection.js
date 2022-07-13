@@ -60,35 +60,41 @@ const IconSelection = () => {
       <div className="absolute w-full h-95 border-b border-t border-slate-700" />
       <div className="absolute w-95 h-full border-l border-r border-slate-700" />
 
-      <div className='bg-slate-900 h-95 w-95 flex flex-wrap justify-evenly pt-12'>
+      <div className='bg-slate-900 h-95 w-95 flex flex-wrap justify-evenly pt-4 sm:pt-12'>
 
         <div
-          className="w-1/2 max-w-[220px] max-h-[220px] hover:opacity-100 hover:cursor-pointer group icon flex flex-col items-center justify-center"
-          onClick={(e) => handleClick(e, 'XMAS')}
-        >
+          className=" w-3/5 sm:w-1/2 max-w-[160px] xs:max-w-[220px] sm:max-w-[220px] max-h-[160px] xs:max-h-[220px] sm:max-h-[220px] hover:opacity-100 hover:cursor-pointer group icon flex flex-col items-center justify-center sm:mt-0 mt-0 "
+          onClick={(e) => handleClick(e, 'XMAS')}>
           <LineBox logo={XmasLogo} logoAltText="Xmas Logo" />
-          <p className="w-full mt-2 pl-2 pr-2 flex justify-center items-center text-lg rounded-md group-hover:text-slate-100">
+          <p className="w-full mt-2 pl-2 pr-2 hidden sm:flex justify-center items-center text-lg rounded-md group-hover:text-slate-100">
             Xmas Time-Machine
+          </p>
+          <p className="w-full mt-0 pl-2 pr-2 flex sm:hidden justify-center items-center text-lg rounded-md group-hover:text-slate-100">
+            Xmas
           </p>
         </div>
 
         <div
-          className="w-1/2 max-w-[220px] max-h-[220px] hover:cursor-pointer group icon flex flex-col items-center justify-center"
-          onClick={(e) => handleClick(e, 'DrinkMXR')}
-        >
+          className="w-3/5 sm:w-1/2 max-w-[160px] xs:max-w-[220px] sm:max-w-[220px] max-h-[160px] xs:max-h-[220px] sm:max-h-[220px] hover:opacity-100 hover:cursor-pointer group icon flex flex-col items-center justify-center sm:mt-0 mt-0 "
+          onClick={(e) => handleClick(e, 'DrinkMXR')}>
           <LineBox logo={DrinkMXR} logoAltText="DrinkMXR Logo" />
-          <p className="w-full mt-2 pl-2 pr-2 flex justify-center items-center text-lg rounded-md group-hover:text-slate-100">
+          <p className="w-full mt-2 pl-2 pr-2 hidden sm:flex justify-center items-center text-lg rounded-md group-hover:text-slate-100">
+            Drink MXR
+          </p>
+          <p className="w-full mt-0 pl-2 pr-2 flex sm:hidden justify-center items-center text-lg rounded-md group-hover:text-slate-100">
             Drink MXR
           </p>
         </div>
 
         <div
-          className="w-1/2 max-w-[220px] max-h-[220px] hover:cursor-pointer group icon flex flex-col items-center justify-center"
-          onClick={(e) => handleClick(e, 'TSB')}
-        >
+          className="w-3/5 sm:w-1/2 max-w-[160px] xs:max-w-[220px] sm:max-w-[220px] max-h-[160px] xs:max-h-[220px] sm:max-h-[220px] hover:opacity-100 hover:cursor-pointer group icon flex flex-col items-center justify-center sm:mt-0 mt-0 "
+          onClick={(e) => handleClick(e, 'TSB')}>
           <LineBox logo={TSBLogo} logoAltText="TSB Logo" />
-          <p className="w-full mt-2 pl-2 pr-2 flex justify-center items-center text-lg rounded-md group-hover:text-slate-100">
+          <p className="w-full mt-2 pl-2 pr-2 hidden sm:flex justify-center items-center text-lg rounded-md group-hover:text-slate-100">
             The Sounding Board
+          </p>
+          <p className="w-full mt-0 pl-2 pr-2 flex sm:hidden justify-center items-center text-lg rounded-md group-hover:text-slate-100">
+            TSB
           </p>
         </div>
 

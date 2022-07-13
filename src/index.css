@@ -15,6 +15,8 @@ body {
   scroll-behavior: smooth;
 }
 
+
+
 ::-webkit-scrollbar {
   height: 6px;
   width: 6px;
@@ -847,6 +849,8 @@ background: #000;
   height: 120%;
 }
 
+
+
 /* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
   100% { background-position: 50px 50px; }
@@ -873,13 +877,12 @@ background: #000;
   0% { background-position: 50px 50px; }
 }
 
-/* Main styles */
 .projects-container {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-  -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
-  -moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
-  -o-animation:      bg-scrolling-reverse .92s infinite; /* Opera 12+ */
-  animation:         bg-scrolling-reverse .92s infinite; /* IE 10+ */
+  -webkit-animation: bg-scrolling-reverse 3s infinite; /* Safari 4+ */
+  -moz-animation:    bg-scrolling-reverse 3s infinite; /* Fx 5+ */
+  -o-animation:      bg-scrolling-reverse 3s infinite; /* Opera 12+ */
+  animation:         bg-scrolling-reverse 3s infinite; /* IE 10+ */
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function:    linear;
   -o-animation-timing-function:      linear;
