@@ -19,9 +19,9 @@ const Project = ({
   techIcons,
 }) => {
   return (
-    <div className="md:min-h-[600px] min-h-[300px] h-screen w-full flex flex-col justify-evenly items-center md:justify-evenly md:items-center md:flex-row md:mb-20 ">
+    <div className="min-h-[300px] md:min-h-[600px] h-screen w-full flex flex-col justify-evenly items-center md:justify-evenly md:items-center md:flex-row md:mb-20 ">
       <div
-        className="w-fit h-ful flex justify-center relative -left-[850px] transition-transform ease-in-out delay-500 duration-700"
+        className="w-fit flex justify-center relative -left-[850px] transition-transform ease-in-out delay-500 duration-700"
         id={borderId}
       >
         <BorderBox
