@@ -4,7 +4,7 @@ import arrow from '../assests/icons/arrow2.svg';
 const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
   return (
     <div className="mt-6 mb-8 sm:mb-0 sm:mt-0 flex flex-col justify-center items-center 
-    w-2/3
+    w-1/3
     xs:w-5/6  xs:h-5/6
     sm:h-full sm:w-full
     xs:max-w-[36rem] xs:max-h-[20rem] 
@@ -14,12 +14,12 @@ const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
     xl:max-w-[520px] xl:max-h-[300px] 
     relative group">
       
-      <div className="relative w-full flex flex-col border rounded-t-lg border-slate-500">
+      <div className="relative w-full flex flex-col border rounded-t-lg border-slate-500 bg-slate-900">
         <div className="flex-none">
           <div className="flex items-center h-5 xs:h-8 space-x-1.5 px-3">
-            <div className="w-1.5 h-1.5 xs:w-2.5 xs:h-2.5 bg-slate-600 rounded-full"></div>
-            <div className="w-1.5 h-1.5 xs:w-2.5 xs:h-2.5 bg-slate-600 rounded-full"></div>
-            <div className="w-1.5 h-1.5 xs:w-2.5 xs:h-2.5 bg-slate-600 rounded-full"></div>
+            <div className="w-1.5 h-1.5 xs:w-2.5 xs:h-2.5 bg-red-600 rounded-full"></div>
+            <div className="w-1.5 h-1.5 xs:w-2.5 xs:h-2.5 bg-yellow-600 rounded-full"></div>
+            <div className="w-1.5 h-1.5 xs:w-2.5 xs:h-2.5 bg-green-600 rounded-full"></div>
           </div>
         </div>
       </div>
