@@ -4,10 +4,10 @@ import arrow from '../assests/icons/arrow2.svg';
 const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
   return (
     <div className="mt-6 mb-8 sm:mb-0 sm:mt-0 flex flex-col justify-center items-center 
-    w-1/3
-    xs:w-5/6  xs:h-5/6
+    w-2/3
+    xs:w-full  xs:h-full
     sm:h-full sm:w-full
-    xs:max-w-[36rem] xs:max-h-[20rem] 
+    xs:max-w-[300px] xs:max-h-[200px] 
     sm:max-w-[480px] sm:max-h-[300px] 
     md:max-w-[370px] md:max-h-[250px] 
     lg:max-w-[460px] lg:max-h-[205px] 
