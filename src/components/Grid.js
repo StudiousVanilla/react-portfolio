@@ -112,7 +112,7 @@ const Grid = () => {
   }, [blankPosition]);
 
   return (
-    <div className="cell-grid rotate-12 relative z-20" onClick={changePosition}>
+    <div className="cell-grid rotate-12 relative z-20">
       <div className="cell" />
       <div className="cell" />
       <div className="cell" />

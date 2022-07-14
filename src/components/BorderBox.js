@@ -12,7 +12,7 @@ const BorderBox = ({
 }) => {
   return (
     <div className="bg-slate-800 flex justify-center items-center rounded-xl relative 
-    min-w-[300px] min-h-[410px] 
+    min-w-[300px] min-h-[380px] 
     xs:min-w-[325px] xs:min-h-[425px] 
     md:min-w-[420px] md:min-h-[480px] 
     lg:min-w-[480px] lg:min-h-[550px] 

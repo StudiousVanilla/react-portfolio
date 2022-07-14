@@ -3,8 +3,8 @@ import arrow from '../assests/icons/arrow2.svg';
 
 const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
   return (
-    <div className="flex flex-col justify-center items-center 
-    w-3/4
+    <div className="mt-6 mb-8 sm:mb-0 sm:mt-0 flex flex-col justify-center items-center 
+    w-2/3
     xs:w-5/6  xs:h-5/6
     sm:h-full sm:w-full
     xs:max-w-[36rem] xs:max-h-[20rem] 
@@ -25,10 +25,10 @@ const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
       </div>
       
       <div className=" border-b border-l border-r border-slate-500 h-full w-full flex justify-center items-center group">
-        <div className="w-full h-full group-hover:hidden">
+        <div className="w-full h-full hidden sm:block sm:group-hover:hidden">
           <img src={preview} alt={previewAlt} />
         </div>
-        <div className="w-full h-full hidden group-hover:block">
+        <div className="w-full h-full sm:hidden sm:group-hover:block">
           <img src={gif} alt={gifAlt} className="w-full h-full" />
         </div>
       </div>
