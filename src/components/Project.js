@@ -17,6 +17,7 @@ const Project = ({
   appComments,
   gitHubLink,
   techIcons,
+  liveLink
 }) => {
   return (
     <div className="min-h-[300px] md:min-h-[600px] h-screen w-full flex flex-col justify-center sm:justify-evenly items-center md:justify-evenly md:items-center md:flex-row md:mb-20 ">
@@ -34,17 +35,17 @@ const Project = ({
           techIcons={techIcons}
         />
       </div>
-
+      
       <div
         className="w-fit flex justify-center relative -right-[850px] transition-transform ease-in-out delay-500 duration-700"
-        id={broswerId}
-      >
+        id={broswerId}>
         <BrowserBox
           preview={preview}
           previewAlt={previewAlt}
           gif={gif}
           gifAlt={gifAlt}
           gitHubLink={gitHubLink}
+          liveLink={liveLink}
         />
       </div>
     </div>

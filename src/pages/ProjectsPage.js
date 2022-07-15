@@ -1,5 +1,7 @@
 import Project from '../components/Project';
 import IconSelection from '../components/IconSelection';
+import xmasPreview from '../assests/projectPreviews/xmasPreview-light.png';
+import xmasGif from '../assests/projectGifs/xmasGif.gif';
 import tsbPreview from '../assests/projectPreviews/tsbPreview.png';
 import tsbGif from '../assests/projectGifs/tsbGif.gif';
 import DrinkMXRPreview from '../assests/projectPreviews/DrinkMXRPreview.png';
@@ -49,9 +51,9 @@ const ProjectsPage = () => {
           broswerId="XMASBrowser"
           logo={XmasLogo}
           logoAltText="Xmas Logo"
-          preview={DrinkMXRPreview}
+          preview={xmasPreview}
           previewAlt="Preview"
-          gif={DrinkMXRGif}
+          gif={xmasGif}
           gifAlt="gif"
           title="Xmas Time-Machine"
           appDescription="A dash through the Irish advertising delights of Christmas past! Select a year and watch a classic Christmas TV Advert from that year. (Made for Mobile)"
@@ -65,6 +67,7 @@ const ProjectsPage = () => {
             { src: pwa, key: 6, alt:'progrssive web app' },
           ]}
           gitHubLink="https://github.com/StudiousVanilla/digital-card"
+          liveLink="https://irishxmastimemachine.com/"
         />
       </div>
       
@@ -92,6 +95,7 @@ const ProjectsPage = () => {
             { src: netlify, key: 7, alt:'netlify' },
           ]}
           gitHubLink="https://github.com/StudiousVanilla/drinkmxr"
+          liveLink="https://www.drinkmxr.com/"
         />
       </div>
       
@@ -118,6 +122,7 @@ const ProjectsPage = () => {
             { src: netlify, key: 6, alt:'netlify' },
           ]}
           gitHubLink="https://github.com/StudiousVanilla/tsb"
+          liveLink="https://tsbcoaching.ie/"
         />
       </div>
     </div>

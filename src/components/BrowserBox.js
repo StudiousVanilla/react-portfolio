@@ -1,17 +1,19 @@
 import github from '../assests/icons/github.svg';
 import arrow from '../assests/icons/arrow2.svg';
 
-const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
+const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink, liveLink }) => {
   return (
+    <a href={liveLink} target="_blank" rel="noreferrer">
     <div className="mt-6 mb-8 sm:mb-0 sm:mt-0 flex flex-col justify-center items-center 
     w-2/3
     xs:w-full  xs:h-full
     sm:h-full sm:w-full
+  
     xs:max-w-[300px] xs:max-h-[200px] 
     sm:max-w-[480px] sm:max-h-[300px] 
     md:max-w-[370px] md:max-h-[250px] 
-    lg:max-w-[460px] lg:max-h-[205px] 
-    xl:max-w-[520px] xl:max-h-[300px] 
+    lg:max-w-[460px] lg:max-h-[280px] 
+    xl:max-w-[520px] xl:max-h-[320px] 
     relative group">
       
       <div className="relative w-full flex flex-col border rounded-t-lg border-slate-500 bg-slate-900">
@@ -33,7 +35,7 @@ const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
         </div>
       </div>
 
-      <div className="absolute -top-20 -right-1 w-16 h-16 hover:opacity-100 hidden sm:flex justify-center items-start text-slate-100 font-bold rotate-[20deg] animate-pulse group-hover:text-slate-900 group-hover:bg-color-900 ease-in-out duration-1000">
+      <div className="absolute -top-16 -right-1 w-16 h-16 hover:opacity-100 hidden sm:flex justify-center items-start text-slate-100 font-bold rotate-[20deg] animate-pulse group-hover:text-slate-900 group-hover:bg-color-900 ease-in-out duration-1000">
           <p className='text-sm'>hover</p>
           <img
             src={arrow}
@@ -57,6 +59,7 @@ const BrowserBox = ({ preview, previewAlt, gif, gifAlt, gitHubLink }) => {
 
 
     </div>
+    </a>
   );
 };
 
