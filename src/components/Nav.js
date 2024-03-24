@@ -6,6 +6,9 @@ const Nav = () => {
       <div className="flex justify-end">
         <ul className="w-1/4 min-w-full sm:min-w-[400px] flex justify-evenly">
           <li className="hover:text-sky-400 cursor-pointer">
+            <Link to='/wedding'>Wedding</Link>
+          </li>
+          <li className="hover:text-sky-400 cursor-pointer">
             <Link to='/about'>About</Link>
           </li>
           <li className="hover:text-sky-400 cursor-pointer">
