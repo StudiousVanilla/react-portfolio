@@ -28,7 +28,7 @@ const ContactPage = () => {
           We're Getting Married!
         </p>
         <p className="text-center md:text-3xl text-md text-[#1ca89b] font-[Mulish] font-light mb-12">
-          AND WE'D LOVE FOR YOU TO JOIN US TO CELEBRATE
+          COME AND CELEBRATE WITH US
         </p>
       </div>
 
@@ -71,7 +71,7 @@ const ContactPage = () => {
             TO AOIFEOISINWEDDING@GMAIL.COM
           </p>{' '}
           <br />
-          <p>NO NEED FOR PRESENTS, YOUR PRESENCE IS GIFT ENOUGH</p>
+          <p className='px-8 md:px-0'>NO NEED FOR PRESENTS, YOUR PRESENCE IS GIFT ENOUGH</p>
         </div>
       </div>
     </div>
