@@ -23,9 +23,9 @@ const ContactPage = () => {
       </div>
 
       {/* 3rd page */}
-      <div className="h-screen w-full flex flex-col justify-center items-center bg-white snap-start scroll-smooth">
-        <p className="flex md:text-6xl text-3xl text-[#1ca89b] font-[Lora] font-light mb-12">
-          We're Getting <i>Married!</i>
+      <div className="h-screen w-full px-3 md:px-0 flex flex-col justify-center items-center bg-white snap-start scroll-smooth">
+        <p className="flex md:text-6xl text-3xl text-center text-[#1ca89b] font-[Lora] font-light mb-12">
+          We're Getting Married!
         </p>
         <p className="text-center md:text-3xl text-md text-[#1ca89b] font-[Mulish] font-light mb-12">
           AND WE'D LOVE FOR YOU TO JOIN US TO CELEBRATE
@@ -33,7 +33,7 @@ const ContactPage = () => {
       </div>
 
       {/* 4th page */}
-      <div className="h-screen w-full flex flex-col justify-center items-center text-center bg-white snap-start scroll-smooth">
+      <div className="h-screen w-full px-2 md:px-0 flex flex-col justify-center items-center text-center bg-white snap-start scroll-smooth">
         <div className="w-full flex flex-wrap flex-col items-center mb-20 text-[#1ca89b]">
           <p className="md:mb-6 mb-2">
             <span className="md:text-3xl text-lg text-[#1ca89b] font-[Mulish] font-light mr-2">
