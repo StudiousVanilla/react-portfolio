@@ -1,6 +1,4 @@
 import collage from '../assests/weddingImages/collage.png';
-import title from '../assests/weddingImages/title.png';
-import info from '../assests/weddingImages/info.png';
 
 const ContactPage = () => {
   return (
