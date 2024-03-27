@@ -887,3 +887,16 @@ background: #000;
   -o-animation-timing-function:      linear;
   animation-timing-function:         linear;
 }
+
+.ani-underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #1ca89b; /* Change color as needed */
+  transition: width 0.3s ease;
+}
+
+.ani-underline:hover::after {
+  width: 100%;
+}
