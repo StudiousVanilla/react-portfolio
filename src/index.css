@@ -900,3 +900,11 @@ background: #000;
 .ani-underline:hover::after {
   width: 100%;
 }
+
+.figma-iframe-container .chromeSpacer {
+  display: none !important;
+}
+
+.embed_documentation_footer--documentationFooter--cRlI0{
+  display: none !important;
+}
