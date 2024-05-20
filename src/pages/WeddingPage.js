@@ -105,7 +105,7 @@ const ContactPage = () => {
               <p>
                 {' '}
                 <span className="md:text-5xl text:2xl text-[#1ca89b] font-[Lora] font-light">
-                  RSVP BY 10 MAY 2024
+                  RSVP BY 09 JUNE 2024
                 </span>{' '}
                 TO AOIFEOISINWEDDING@GMAIL.COM
               </p>{' '}
